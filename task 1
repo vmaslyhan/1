@@ -1,20 +1,19 @@
 #include <stdio.h>
 
-int main() {
-    int t1, t2, t3;
-
-    // Ввід трьох натуральних чисел t1, t2, t3
-    printf("Enter three positive integers t1, t2, t3: ");
-    scanf("%d %d %d", &t1, &t2, &t3);
-
-    // Обчислення загального часу
-    float total_time = (float)(t1 + t2 + t3);
-
-    // Обчислення часу в годинах
-    float time_in_hours = total_time / 3.0;
-
-    // Виведення результату з округленням до 2 знаків після коми
-    printf("Total time taken: %.2f hours\n", time_in_hours);
-
+int main()
+{
+    int t1, t2, t3; // оголошення змінних
+    while (1) // створення циклу
+    {
+        printf("\nType in 3 numbers less then 10000:\n");
+        scanf("\n%d %d %d", &t1, &t2, &t3); // зчитування даних з клавіатури
+        if (t1 > 10000  t2 > 10000  t3 > 10000) { // перевірка введених даних
+            printf("Numbers can`t be over 10000.\n"); 
+            continue;
+        }
+        float t = (t1 + t2 + t3) / 3.0; // обчислення часу
+        printf("\nGuests will eat the pie in %.2f hours\n", t); // виведення результату
+        break; // вихід з циклу
+    }
     return 0;
 }
