@@ -11,7 +11,8 @@ int main()
             printf("Numbers can`t be over 10000.\n"); 
             continue;
         }
-        float t = (t1 + t2 + t3) / 3.0; // обчислення часу
+        float t4 = (t1 + t2 + t3) / 3.0; // обчислення часу в годинах
+        float t = t4 / 3.0; // обчислення часу за який гості разом з'їдять пиріг
         printf("\nGuests will eat the pie in %.2f hours\n", t); // виведення результату
         break; // вихід з циклу
     }
