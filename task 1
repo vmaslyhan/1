@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int t1, t2, t3;
+
+    // Ввід трьох натуральних чисел t1, t2, t3
+    printf("Enter three positive integers t1, t2, t3: ");
+    scanf("%d %d %d", &t1, &t2, &t3);
+
+    // Обчислення загального часу
+    float total_time = (float)(t1 + t2 + t3);
+
+    // Обчислення часу в годинах
+    float time_in_hours = total_time / 3.0;
+
+    // Виведення результату з округленням до 2 знаків після коми
+    printf("Total time taken: %.2f hours\n", time_in_hours);
+
+    return 0;
+}
